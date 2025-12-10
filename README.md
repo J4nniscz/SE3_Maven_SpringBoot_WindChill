@@ -10,7 +10,7 @@ Berechnung der Windchill-Temperatur (gefühlte Temperatur bei 10° Grad oder wen
 Beispiel-URL bei lokaler Ausführung:
 http://localhost:8080/windchill/v1/berechnung?pt=1&wg=25
 
-Ergebnis:
+**Ergebnis:**
 ```
 {
     "tatsaechlicheTemperatur":  1.0,
