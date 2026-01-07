@@ -7,6 +7,9 @@ on:
 jobs:
   job-fatjar:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java-version: [21, 25]
     steps:
     - name: Git-Repo auschecken
       uses: actions/checkout@v4
@@ -29,3 +32,4 @@ jobs:
         path: target/windchill-*-SNAPSHOT.jar
         if-no-files-found: error
         retention-days: 3
+
