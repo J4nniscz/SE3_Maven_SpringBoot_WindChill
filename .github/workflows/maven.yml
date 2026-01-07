@@ -28,9 +28,10 @@ jobs:
     - name: FatJar-Datei veröffentlichen
       uses: actions/upload-artifact@v4
       with:
-        name: WindChill_FatJar${{ matrix.version }}
+        name: WindChill_FatJar${{ matrix.java-version }}
         path: target/windchill-*-SNAPSHOT.jar
         if-no-files-found: error
         retention-days: 3
+
 
 
